@@ -197,14 +197,12 @@ void Server::onReadyReadUdp() // обработчик UDP
 
         case ASK:
         {
-
-
             break;
         }
 
         case CONNECTIONRESPONSE:
         {
-            qDebug() << "Запрос на подключение получен";
+            //qDebug() << "Запрос на подключение получен";
             tmpMessage.clear();
             udpStruct strct;
             QDataStream obj(&tmpMessage, QIODevice::WriteOnly);
